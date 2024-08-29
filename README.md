@@ -1,10 +1,6 @@
 # is-cid <!-- omit in toc -->
 
-> A set of utilities to help identify IPFS resources on the web
-
-# About
-
-Utils to properly validate CIDs to remove false-positives. This package works with both CJS and ESM.
+> Utils to properly validate CIDs to remove false-positives. This package works with both CJS and ESM.
 
 ## Example
 
