@@ -29,30 +29,28 @@
  * ```
  */
 
-import { CID } from 'multiformats/cid'
+import { CID } from 'multiformats/cid';
 
 /**
  * @param {any} input
  */
-const isString = (input: any): input is string => {
-  return typeof input === 'string'
-}
+const isString = (input: any): input is string => typeof input === 'string';
 
 const isValid = (hash: CID | string): hash is CID => {
   try {
     if (isString(hash)) {
-      return Boolean(CID.parse(hash))
+      return Boolean(CID.parse(hash));
     }
 
-    return Boolean(CID.asCID(hash)) // eslint-disable-line no-new
+    return Boolean(CID.asCID(hash)); // eslint-disable-line no-new
   } catch {
-    return false
+    return false;
   }
-}
+};
 
 /**
  * Returns `true` if the provided string or [`CID`](https://github.com/multiformats/js-multiformats/#readme)
  * object represents a valid [CID](https://docs.ipfs.io/guides/concepts/cid/) or
  * `false` otherwise.
  */
-export { isValid }
+export { isValid };
