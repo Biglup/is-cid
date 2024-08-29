@@ -4,7 +4,7 @@
 
 # About
 
-Utils to proper validate CIDs to remove false-positives
+Utils to properly validate CIDs to remove false-positives. This package works with both CJS and ESM.
 
 ## Example
 
@@ -20,7 +20,7 @@ CidValidator.validate('xxxxx') // false
 # Install
 
 ```console
-$ npm i @Biglup/is-cid
+$ npm i @biglup/is-cid
 ```
 
 # License

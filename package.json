@@ -26,7 +26,7 @@
   ],
   "license": "Apache-2.0",
   "scripts": {
-    "build": "tsup --config ./tsup.config.ts",
+    "build": "tsup --config ./tsup.config.ts && mkdir -p dist/esm && mkdir -p dist/cjs && cp ./build/esm-package.json dist/esm/package.json && mv ./dist/index.mjs ./dist/esm/index.js && mv ./dist/index.mjs.map ./dist/esm/index.js.map && cp ./dist/index.d.ts ./dist/esm/index.d.ts && cp ./dist/index.d.mts ./dist/esm/index.d.mts && mv ./dist/index.js ./dist/cjs/index.js && mv ./dist/index.js.map ./dist/cjs/index.js.map && mv ./dist/index.d.ts ./dist/cjs/index.d.ts && mv ./dist/index.d.mts ./dist/cjs/index.d.mts && cp ./build/cjs-package.json dist/cjs/package.json",
     "cleanup:dist": "rm -rf dist",
     "cleanup:nm": "rm -rf node_modules",
     "cleanup": "run-s cleanup:dist cleanup:nm",
