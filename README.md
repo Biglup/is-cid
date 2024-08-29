@@ -5,7 +5,7 @@
 ## Example
 
 ```TypeScript
-import CidValidator from '@Biglup/is-cid'
+import * as CidValidator from '@biglup/is-cid';
 
 CidValidator.validate('QmYjtig7VJQ6XsnUjqqJvj7QaMcCAwtrgNdahSiFofrE7o') // true (CIDv0)
 CidValidator.validate('bafybeiasb5vpmaounyilfuxbd3lryvosl4yefqrfahsb2esg46q6tu6y5q') // true (CIDv1 in Base32)

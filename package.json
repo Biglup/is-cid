@@ -1,6 +1,6 @@
 {
   "name": "@biglup/is-cid",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Util to validate CIDs",
   "engines": {
     "node": ">=16.0.0",
